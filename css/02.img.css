@@ -1,0 +1,15 @@
+img{
+    width: 200px;
+    height: 300px;
+}
+
+.banner_img{
+    width: 400px;
+    height: 200px;
+}
+
+.article_img{
+    width: 200px;
+    height: 300px;
+    display: block;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img</title>
+    <!-- ctrl + / 註解 -->
+    <link rel="stylesheet" href="./css/02.img.css">
+</head>
+
+<body>
+    <img class="banner_img" src="https://cdn.pixabay.com/photo/2023/02/28/03/42/ibex-7819817_640.jpg" alt=""
+        title="deer">
+    <!-- <img class="article_img" src="https://cdn.pixabay.com/photo/2023/02/28/03/42/ibex-7819817_640.jpg" alt=""
+        title="deer">
+    <img class="article_img" src="https://cdn.pixabay.com/photo/2023/02/28/03/42/ibex-7819817_640.jpg" alt=""
+        title="deer"> -->
+
+    <script>
+        const img = document.querySelector('.banner_img');
+        let isFirstImg = true;
+        img.addEventListener('click', function () {
+            console.log('img clicked');
+
+            if (isFirstImg) {
+                img.setAttribute('src', 'https://cdn.pixabay.com/photo/2023/01/11/13/46/chick-7711698_960_720.jpg');
+                isFirstImg = false;
+            }
+            else {
+                img.setAttribute('src', 'https://cdn.pixabay.com/photo/2023/02/28/03/42/ibex-7819817_640.jpg');
+                isFirstImg = true;
+            }
+        });
+    </script>
+</body>
+
+</html>

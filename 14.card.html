@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+
+    <style>
+        .container {
+            width: 100%;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            box-sizing: border-box;
+            width: 100%;
+
+            padding: 5px;
+
+            /* border: 2px solid red; */
+            /* margin: 5px; */
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        @media screen and (min-width:572px) {
+            .col {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .col {
+                width: 33.333333%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./imgs/pancake.jpg" alt="error">
+                            <h3>honey pancake</h3>
+                            <p>這張圖片是一個
+                                <span>好吃的鬆餅</span>
+                                ，超好吃的鬆餅
+                                <span>（Pancake）</span>
+                                是網路上找到的圖片。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./imgs/pancake.jpg" alt="error">
+                            <h3>honey pancake</h3>
+                            <p>這張圖片是一個
+                                <span>好吃的鬆餅</span>
+                                ，超好吃的鬆餅
+                                <span>（Pancake）</span>
+                                是網路上找到的圖片。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./imgs/pancake.jpg" alt="error">
+                            <h3>honey pancake</h3>
+                            <p>這張圖片是一個
+                                <span>好吃的鬆餅</span>
+                                ，超好吃的鬆餅
+                                <span>（Pancake）</span>
+                                是網路上找到的圖片。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

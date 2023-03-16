@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 2px solid red;
+        }
+
+        .contain img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border: 2px solid red;
+        }
+
+        .fill img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            border: 2px solid red;
+        }
+
+        .none img {
+            width: 100%;
+            height: 100%;
+            object-fit: none;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cover">
+        <img src="./imgs/pancake.jpg" alt="pancake wrong" title="pancake">
+    </div>
+    <div class="contain">
+        <img src="./imgs/pancake.jpg" alt="pancake wrong" title="pancake">
+    </div>
+    <div class="fill">
+        <img src="./imgs/pancake.jpg" alt="pancake wrong" title="pancake">
+    </div>
+    <div class="none">
+        <img src="./imgs/pancake.jpg" alt="pancake wrong" title="pancake">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: bisque;
+        }
+
+        #global>li {
+            display: inline-block;
+            margin: 10px;
+            line-height: 10px;
+        }
+
+        #global>li>a {
+            text-decoration: none;
+            color: rgb(0, 28, 238);
+        }
+
+        .hide {
+            opacity: 0;
+            transition-duration: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul id="global">
+            <li><a href="./11.nav.html">11.nav</a></li>
+            <li><a href="./01.HelloWorld.html">01.HelloWorld</a></li>
+            <li><a href="https://www.apple.com/tw/">link3</a></li>
+            <li><a href="https://www.apple.com/tw/">link4</a></li>
+        </ul>
+    </nav>
+
+
+    <h1>Hello World</h1>
+    <p>This is a test.</p>
+    <button>Click</button>
+    <div class="hide">
+        <h1>Hello World 2</h1>
+        <p>This is a test2.</p>
+    </div>
+
+    <script>
+        const btn = document.querySelector('button');
+        const hideDiv = document.querySelector('.hide');
+
+        btn.addEventListener('click', function () {
+            console.log();
+            hideDiv.style.opacity = 1
+        })
+    </script>
+</body>
+
+</html>

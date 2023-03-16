@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* nav bar 固定在上面 */
+        nav {
+            position: fixed;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: bisque;
+        }
+
+        #global>li {
+            display: inline-block;
+            margin: 10px;
+            line-height: 10px;
+        }
+
+        #global>li>a {
+            text-decoration: none;
+            color: rgb(0, 28, 238);
+        }
+
+        section {
+            height: 200px;
+        }
+
+        main {
+            padding-top: 30px;
+        }
+
+        #backtotop {
+            background-color: aquamarine;
+            width: fit-content;
+            padding: 10px 10px;
+            border-radius: 5px;
+
+            /* position: fixed; */
+            right: 10px;
+            bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- section{section$}*6 一次創很多個-->
+        <ul id="global">
+            <li><a href="./11.nav.html">11.nav</a></li>
+            <li><a href="./01.HelloWorld.html">01.HelloWorld</a></li>
+            <li><a href="https://www.apple.com/tw/">link3</a></li>
+            <li><a href="https://www.apple.com/tw/">link4</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>11.nav</h2>
+        <section>section1</section>
+        <section>section2</section>
+        <section>section3</section>
+        <section>section4</section>
+        <section>section5</section>
+        <section>section6</section>
+        <p id="backtotop">top</p>
+        <!-- <a id="backtotop" href="#top">back to top</a> -->
+    </main>
+</body>
+
+</html>

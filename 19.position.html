@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap2 {
+            width: 800px;
+            height: 800px;
+            background-color: rgb(8, 8, 8);
+            /* 相對於wrap */
+            position: relative;
+            right: 0;
+            bottom: 0;
+        }
+
+        .wrap {
+            width: 400px;
+            height: 400px;
+            background-color: bisque;
+            /* 相對於wrap */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            /* 絕對置中 */
+            transform: translate(-50%, -50%);
+        }
+
+        .box1 {
+            width: 300px;
+            height: 200px;
+            background-color: teal;
+
+            position: absolute;
+            right: 0;
+            top: 0;
+            /* left: 210px; */
+            /* top: 50px; */
+        }
+
+        .box2 {
+            width: 300px;
+            height: 200px;
+            background-color: rgb(128, 119, 0);
+            position: relative;
+
+            /* left: 200px; */
+            /* top: 50px; */
+
+            /* 要有positon才可以調整 */
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap2">
+        <div class="wrap">
+            <div class="box1">box1</div>
+            <div class="box2">box2</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
